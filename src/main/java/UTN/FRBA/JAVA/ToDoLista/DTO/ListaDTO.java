@@ -4,19 +4,28 @@ import java.util.Date;
 
 public class ListaDTO {
 
-	Integer ID;
+	Integer id;
 	Date   fechaCreacion,fechaLimite,fechaRealizacion;
 	
-	String asisnadaid,descripcion;
+	String descripcion;
+	int asisnadaid;
 	
-	Boolean realizada;
-
-	public Integer getID() {
-		return ID;
+	public int getAsisnadaid() {
+		return asisnadaid;
 	}
 
-	public void setID(Integer iD) {
-		ID = iD;
+	public void setAsisnadaid(int asisnadaid) {
+		this.asisnadaid = asisnadaid;
+	}
+
+	Boolean realizada;
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 	public Date getFechaCreacion() {
@@ -42,15 +51,6 @@ public class ListaDTO {
 	public void setFechaRealizacion(Date fechaRealizacion) {
 		this.fechaRealizacion = fechaRealizacion;
 	}
-
-	public String getAsisnadaid() {
-		return asisnadaid;
-	}
-
-	public void setAsisnadaid(String asisnadaid) {
-		this.asisnadaid = asisnadaid;
-	}
-
 	public String getDescripcion() {
 		return descripcion;
 	}
@@ -66,7 +66,8 @@ public class ListaDTO {
 	public void setRealizada(Boolean realizada) {
 		this.realizada = realizada;
 	}
-	
+
+
 	
 	
 	

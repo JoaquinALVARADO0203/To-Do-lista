@@ -10,21 +10,41 @@ public class ListaModels {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
+	Integer id;
 	
+	Date fechaCreacion,fechaLimite,fechaRealizacion;
+	
+	String descripcion;
+	int asisnadaid;
+	Boolean borrado,realizada;
 
-	Integer ID;
-	Date   fechaCreacion,fechaLimite,fechaRealizacion;
 	
-	String asisnadaid,descripcion;
 	
-	Boolean realizada;
-
-	public Integer getID() {
-		return ID;
+	
+	
+	
+	public int getAsisnadaid() {
+		return asisnadaid;
 	}
 
-	public void setID(Integer iD) {
-		ID = iD;
+	public void setAsisnadaid(int asisnadaid) {
+		this.asisnadaid = asisnadaid;
+	}
+
+	public Boolean getBorrado() {
+		return borrado;
+	}
+
+	public void setBorrado(Boolean borrado) {
+		this.borrado = borrado;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 	public Date getFechaCreacion() {
@@ -50,15 +70,6 @@ public class ListaModels {
 	public void setFechaRealizacion(Date fechaRealizacion) {
 		this.fechaRealizacion = fechaRealizacion;
 	}
-
-	public String getAsisnadaid() {
-		return asisnadaid;
-	}
-
-	public void setAsisnadaid(String asisnadaid) {
-		this.asisnadaid = asisnadaid;
-	}
-
 	public String getDescripcion() {
 		return descripcion;
 	}
@@ -74,7 +85,7 @@ public class ListaModels {
 	public void setRealizada(Boolean realizada) {
 		this.realizada = realizada;
 	}
-	
-	
+
+
 	
 }
